@@ -1,0 +1,26 @@
+{
+  "name": "cep-vuejs",
+  "version": "1.0.0",
+  "description": "Criação de componente com Vue JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wescleymatos/cep-vuejs.git"
+  },
+  "keywords": [
+    "vue",
+    "js"
+  ],
+  "author": "Wescley Matos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wescleymatos/cep-vuejs/issues"
+  },
+  "homepage": "https://github.com/wescleymatos/cep-vuejs#readme",
+  "dependencies": {
+    "bower": "^1.8.0"
+  }
+}

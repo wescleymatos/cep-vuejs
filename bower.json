@@ -1,0 +1,25 @@
+{
+  "name": "cep-vuejs",
+  "description": "Criação de componente com Vue JS",
+  "main": "index.js",
+  "authors": [
+    "Wescley Matos"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "vue",
+    "js"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "^2.2.6",
+    "bootstrap": "^3.3.7"
+  }
+}
