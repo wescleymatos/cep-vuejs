@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="container">
+    <div id="app" class="container">
         <div class="header clearfix">
             <h3 class="text-muted">Componente CEP - Vue JS</h3>
         </div>
@@ -28,7 +28,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <label>CEP</label>
-                        <input type="text" id="cep" class="form-control">
+                        <input type="text" id="cep" class="form-control" v-model="cep" v-on:keyup="getAddress()">
                     </div>
                     <div class="col-md-6">
                         <label>Cidade</label>
@@ -65,6 +65,8 @@
 
     </div> <!-- /container -->
 
-    <script src=""></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/vue/dist/vue.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
