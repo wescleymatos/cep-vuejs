@@ -1,11 +1,16 @@
 new Vue({
     el: '#app',
     data: {
-        cep: '59080-100'
+        cep: '',
+        endereco: {}
     },
     methods: {
         getAddress: function () {
-            console.log('teste');
+            if (/^[0-9]{5}-[0-9]{3}$/.test(this.cep)) {
+                jQuery.get('http://viacep.com.br/ws/' + this.cep + '/json/', function (endereco) {
+                    this.endereco = endereco;
+                }.bind(this));
+            }
         }
     }
 });
