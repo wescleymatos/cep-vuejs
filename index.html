@@ -11,62 +11,30 @@
     <title>Componente de CEP</title>
 
     <!-- Bootstrap core CSS -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
-
     <div id="app" class="container">
         <div class="header clearfix">
             <h3 class="text-muted">Componente CEP - Vue JS</h3>
         </div>
-
         <div class="jumbotron">
-
             <fieldset>
                 <legend>Endereço:</legend>
-                <div class="row">
-                    <div class="col-md-3">
-                        <label>CEP</label>
-                        <input type="text" id="cep" class="form-control" v-model="cep" v-on:keyup="getAddress()">
-                    </div>
-                    <div class="col-md-6">
-                        <label>Cidade</label>
-                        <input type="text" id="cidade" class="form-control">
-                    </div>
-                    <div class="col-md-3">
-                        <label>UF</label>
-                        <input type="text" id="uf" class="form-control">
-                    </div>
-                </div>
-                <br />
-                <div class="row">
-                    <div class="col-md-4">
-                        <label>Bairro</label>
-                        <input type="text" id="bairro" class="form-control">
-                    </div>
-                    <div class="col-md-4">
-                        <label>Logradouro</label>
-                        <input type="text" id="logradouro" class="form-control">
-                    </div>
-                    <div class="col-md-4">
-                        <label>Complemento</label>
-                        <input type="text" id="complemento" class="form-control">
-                    </div>
-                </div>
+                <cep-component></cep-component>
             </fieldset>
             <br />
             <button type="button" class="btn btn-primary">Enviar</button>
         </div>
-
         <footer class="footer">
             <p>&copy; 2016 Company, Inc.</p>
         </footer>
-
     </div> <!-- /container -->
-
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
     <script src="bower_components/vue/dist/vue.min.js"></script>
+    <script src="cep-component.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
